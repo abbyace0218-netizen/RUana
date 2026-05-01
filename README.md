@@ -125,7 +125,13 @@ function startCelebration(e) {
   // Show characters
   createCharacter('🐭', -200, 100, 'chiikawa-sign', 'Birthday!');
   createCharacter('🎀', window.innerWidth + 200, 150, 'mymelody-sign', 'Happy Birthday!');
+// Changed from:
+createCharacter('🐭', -200, 100, 'chiikawa-sign', 'Birthday!');
+createCharacter('🎀', window.innerWidth + 200, 150, 'mymelody-sign', 'Happy Birthday!');
 
+// Changed to:
+createCharacter('🐭', 50, 150, 'chiikawa-sign', 'Birthday!');
+createCharacter('🎀', window.innerWidth - 150, 150, 'mymelody-sign', 'Happy Birthday!');
   const duration = 3 * 1000;
   const end = Date.now() + duration;
 
